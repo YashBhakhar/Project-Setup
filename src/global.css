@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+  --primary-color: #438eff;
+  --secondary-color: #1e2538;
+  --input-color: #d6d9e5;
+  --background-color-main: #f5f5f5;
+}
+
+@layer components{
+  .popoverArrow {
+    fill: white;
+    filter: drop-shadow(0 0 3px gray);
+    clip-path: inset(0 -10px -10px -10px);
+  }
+}
